@@ -1,0 +1,21 @@
+# -*- js -*-
+{
+    "version": "2.1",
+
+    "jobs": {
+        "build": {
+            "docker": [{"image": "debian:stable"}],
+            "steps": [
+                "checkout",
+                {"run": "echo lol"},
+            ]
+        },
+    },
+
+    "workflows": {
+        "version": 2,
+        "all": {
+            "jobs": ["build"]
+        }
+    }
+}
