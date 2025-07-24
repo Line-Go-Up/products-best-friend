@@ -7,7 +7,7 @@
             "docker": [{"image": "debian:stable"}],
             "steps": [
                 "checkout",
-                {"run": "echo lol"},
+                {"run": "echo lmao"},
             ]
         },
     },
